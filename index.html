@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Linking Bootstrap 4.1.1 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <!-- Linking my CSS -->
+    <link rel="stylesheet" href="assests/css/style.css">
+
+
+
+    <title>Choo Choo</title>
+</head>
+
+<body>
+
+    <div class="jumbotron container text-center" id="header">I Choo Choo Choose You</div>
+
+    <div class="container" id="table-container">
+            <table class="table" id="data-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Next Train </th>
+                        <th scope="col">Frequency (Min)</th>
+                        <th scope="col">Min Away</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
+    
+                </tbody>
+            </table>
+        </div>
+
+    <div class="jumbotron container" id="form-container">
+        <h2>Add Train</h2>
+        <div class="row">
+            <div class="col-sm-12">
+                <form>
+                    <div class="row">
+                        <label>Train Name</label>
+                        <input type="text" class="form-control" id="train-name" placeholder="Train McTrainface">
+                    </div>
+                    <div class="row">
+                        <label>Destination</label>
+                        <input type="text" class="form-control" id="destination" placeholder="Phoenix">
+                    </div>
+                    <div class="row">
+                        <label>First Train Time (HH:mm - Military Time)</label>
+                        <input type="text" class="form-control" id="first-train" placeholder="14:50">
+                    </div>
+                    <div class="row">
+                        <label>Frequency (min)</label>
+                        <input type="number" class="form-control" id="frequency" placeholder="30">
+                    </div>
+                    <button class="btn btn-primary" id="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+
+    <!-- Linking JQuery and Bootstrap JS components -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <!--Linking moment JS to HTML-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!-- Linking my JS -->
+    <script src="assests/js/app.js"></script>
+</body>
+
+</html>
