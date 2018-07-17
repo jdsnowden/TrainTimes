@@ -1,0 +1,22 @@
+#table-container, #form-container {
+    background-color: #fff;
+    border: 1px solid midnightblue;
+}
+
+button {
+    margin-top: 20px;
+    float:right;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 20px;
+}
+
+#header {
+    background: gainsboro;
+    color: #fff;
+}
